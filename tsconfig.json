@@ -16,6 +16,6 @@
       ],
       "target": "es2015"
     },
-    "include": ["**/*.ts", "**/*.tsx", "src/pages/404.js"],
+    "include": ["**/*.ts", "**/*.tsx", "src/pages/404.tsx"],
     "exclude": ["node_modules/*", "public/*"]
 }

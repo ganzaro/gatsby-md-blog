@@ -1,15 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Header from "../components/header"
+
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
 
   return (
+    
     <div>
+      <Header></Header>
       <h1>{post.frontmatter.title}</h1>
       <small>{post.frontmatter.date}</small>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      
     </div>
+   
   )
 }
 

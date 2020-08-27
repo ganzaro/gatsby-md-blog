@@ -1,10 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
+import Layout from "../components/layout"
+
 export default function Blog({ data }) {
   const { posts } = data.blog
 
   return (
+    <Layout>
     <div>
       <h1>My blog posts</h1>
 
@@ -20,6 +23,7 @@ export default function Blog({ data }) {
         </article>
       ))}
     </div>
+    </Layout>
   )
 }
 
