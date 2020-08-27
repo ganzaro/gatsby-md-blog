@@ -11,7 +11,7 @@ export default function Home({ data }) {
       <Layout>
       <h1>{title}</h1>
       <p>{description}</p>
-      <Link to="/blog">Read my blog</Link>
+      <Link to="/blog">Read our blog</Link>
 
       <img alt="Cute" src={data.image.publicURL} />
       </Layout>
@@ -28,7 +28,7 @@ export const pageQuery = graphql`
       }
     }
 
-    image: file(base: { eq: "billa.jpg" }) {
+    image: file(base: { eq: "bsg_logo_long.png" }) {
       publicURL
     }
   }

@@ -11,9 +11,9 @@ export default () => (
     <SEO title="Home" />
     <Navbar />
     <Main>
-      <Title>Indian Bullionaire</Title>
+      <Title>Bullionaire</Title>
       <Description>
-        I make unboxing, review and educational videos about precious metals.
+        reviews and educational videos about precious metals.
       </Description>
       <Social>
         <a

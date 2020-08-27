@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby + Tailwind + Emotion + TS + MD`,
-    description: `Billas Blog`,
+    title: `BSG Blog`,
+    description: `Blockchain Society Ghana News and Events`,
     author: `pry`,
   },
   plugins: [

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Layout>
     <div style={{ color: `teal` }}>
-      <p>About page</p>
+      <p>Events page</p>
     </div>
     </Layout>
   )
