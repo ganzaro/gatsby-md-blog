@@ -7,34 +7,28 @@ import BSG500 from "../../images/bsg-500x500.jpg"
 
 
 const MissGuideCard = () => {
-    return (
-        // <Wrapper>
-            
-            <CarouselBody>
+    return (            
+            <CardWrapper>
             <Img2 src={BSG500} alt={`logo`}></Img2>
             <TextWrapper>
                 <H1>MissGuideCard</H1>
+                <p>date</p>
                 <P1>Missguided is a UK-based fashion retailer that has nearly doubled in size since last year. They integrated Stripe to deliver seamless checkout across mobile and web for customers in 100+ countries, all while automatically combating fraud.</P1>
                 <Button2>Read More</Button2>
             </TextWrapper>
-            </CarouselBody>
-        // </Wrapper>
+            </CardWrapper>
     )
 }
 
 export default MissGuideCard
 
-const Wrapper = styled.div`
-    ${tw`m-10 mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200`}
-    
-`
-//     
 
 // ${tw`w-2/3 p-4`}
-const CarouselBody = styled.div`
-${tw`relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl`}
+const CardWrapper = styled.div`
+${tw`m-10 relative rounded-lg block lg:flex md:flex sm:flex items-center bg-gray-100 shadow-xl`}
 
 `
+// ${tw`max-w-md w-full lg:flex md:flex shadow-lg  mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-64`}
 
 const H1 = tw.h1`
     text-gray-900 font-bold text-2xl
@@ -54,8 +48,10 @@ const Img = tw.img`
 `
 
 const Img2 = tw.img`
-    w-1/5 bg-cover md:rounded-t-none md:rounded-l-lg md:rounded-r-lg
+h-48 w-1/4 bg-cover md:rounded-t-none md:rounded-l-lg md:rounded-r-lg
+    
 `
+// h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden
 
 const TextWrapper = styled.div`
     ${tw`w-2/3 p-4`}    
@@ -64,6 +60,13 @@ const TextWrapper = styled.div`
 const Button2 = tw.button`
     px-6 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded
 `
+
+
+const Wrapper = styled.div`
+    ${tw`m-10 mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200`} 
+`
+
+
 
 // https://tailwindcomponents.com/component/stripe-carousel-clone
 // <!-- component -->
