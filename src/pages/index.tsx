@@ -2,6 +2,8 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 
 import Layout from "../components/layout"
+import BackpackCard from "../components/cards/backpack"
+import MissGuideCard from "../components/cards/missguid"
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
@@ -13,7 +15,10 @@ export default function Home({ data }) {
       <p>{description}</p>
       <Link to="/blog">Read our blog</Link>
 
-      <img alt="Cute" src={data.image.publicURL} />
+      {/* <img alt="Cute" src={data.image.publicURL} /> */}
+
+      <BackpackCard></BackpackCard>
+      <MissGuideCard></MissGuideCard>
       </Layout>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Header from "../components/header_4"
+import Header from "../components/header"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
